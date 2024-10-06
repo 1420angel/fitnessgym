@@ -164,21 +164,5 @@
     });
 
 
-    fetch('https://uam.getmerlin.in/status', {
-        method: 'GET',
-        headers: {
-          'Authorization': 'Bearer your_token_here'
-        }
-      })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Unauthorized');
-        }
-        return response.json();
-      })
-      .catch(error => {
-        console.error('There was a problem:', error);
-      });
-      
-
+    
 })(jQuery);
